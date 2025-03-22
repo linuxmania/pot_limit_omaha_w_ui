@@ -297,21 +297,7 @@ function doFlop(){
         flopState++;
     } 
 }
-/*
-function tdclick2(){
-    if(document.getElementById('p2c1').src.match('img/back2.webp')){
-        document.getElementById('p2c1').src = 'img/' + game.players[1].hand[0].image;
-        document.getElementById('p2c2').src = 'img/' + game.players[1].hand[1].image;        
-        document.getElementById('p2c3').src = 'img/' + game.players[1].hand[2].image;        
-        document.getElementById('p2c4').src = 'img/' + game.players[1].hand[3].image;        
-    } else {
-        document.getElementById('p2c1').src = 'img/back2.webp';
-        document.getElementById('p2c2').src = 'img/back2.webp';
-        document.getElementById('p2c3').src = 'img/back2.webp';
-        document.getElementById('p2c4').src = 'img/back2.webp';
-    }
-}
-*/
+
 function tdclick(n){
     if(document.getElementById('p' + n + 'c1').src.match('img/back2.webp')){
         document.getElementById('p' + n + 'c1').src = 'img/' + game.players[n-1].hand[0].image;
@@ -325,38 +311,3 @@ function tdclick(n){
         document.getElementById('p'+n+'c4').src = 'img/back2.webp';
     }
 }
-
-/*
-function tdclick(event){
- //   alert('td clicked'); 
-    var img_id = document.getElementById('p1c1');
-    if(img_id.src.match('img/back2.webp')){
-        img_id.src = 'img/' + game.players[0].hand[0].image;
-    } else if(img_id.src.match(game.players[0].hand[0].image)){
-        img_id.src = 'img/back2.webp';
-    }
-    
-    var img_id2 = document.getElementById('p1c2');
-    if(img_id2.src.match('img/back2.webp')){
-        img_id2.src = 'img/' + game.players[0].hand[1].image;
-    } else if(img_id2.src.match(game.players[0].hand[1].image)){
-        img_id2.src = 'img/back2.webp';
-    }
-    
-    var img_id3 = document.getElementById('p1c3');
-    if(img_id3.src.match('img/back2.webp')){
-        img_id3.src = 'img/' + game.players[0].hand[2].image;
-    } else if(img_id3.src.match(game.players[0].hand[2].image)){
-        img_id3.src = 'img/back2.webp';
-    }
-
-    var img_id4 = document.getElementById('p1c4');
-    if(img_id4.src.match('img/back2.webp')){
-        img_id4.src = 'img/' + game.players[0].hand[3].image;
-    } else if(img_id4.src.match(game.players[0].hand[3].image)){
-        img_id4.src = 'img/back2.webp';
-    }
-    
-    event.stopPropagation();
-}
-*/
